@@ -23,8 +23,7 @@ This is an end-to-end project on Real-Time Stock Market Data using Python, Kafka
 - The application emulates streaming data by sampling records from a CSV file in quick intervals.
 
 #### Kafka Configuration:
-- **Partitions**: 1
-- This configuration allows for easy execution as the required data throughput is low.
+- This configuration includes one producer and one consumer allows for easy execution as the required data throughput is low.
 - The producer reads from a CSV file and emulates real time streaming. It sends the data to the Kafka broker.
 - The consumer reads the data from the Kafka broker and stores the data into an S3 bucket, which is achieved through AWS CLI. 
 
